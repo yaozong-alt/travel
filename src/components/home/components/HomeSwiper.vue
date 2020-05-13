@@ -40,5 +40,4 @@
         // background:#ccc
         .swiper-img
             width 100%
-     
 </style>

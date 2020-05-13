@@ -23,7 +23,7 @@
 <style lang="stylus" scoped>
     //1 rem = 50px;
     //43 px = .86px;
-    $bgColor = #00b4d4
+    $bgColor = red
     .header
         display flex
         line-height .86rem
