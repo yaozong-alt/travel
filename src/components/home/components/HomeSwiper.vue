@@ -20,12 +20,11 @@
                     loop:true,//可以实现左右的一个循环;
                     autoplay: 3000,  //每隔3秒自动轮播
                     // speed: 4000, //轮播的速度
-
                 },
                 //实现循环滚动:
                 swiperList: [
-                    {id:10001,imgUrl:"//imgs.qunarzz.com/vc/6d/9f/35/b8ad5468f73fd60ec0ced086f6.jpg_92.jpg"},
-                    {id:10002,imgUrl:"//imgs.qunarzz.com/vc/e3/a1/71/f498dfd3bed948d623c9093252.jpg_92.jpg"}
+                    {id:10001,imgUrl:"http://imgs.qunarzz.com/vc/6d/9f/35/b8ad5468f73fd60ec0ced086f6.jpg_92.jpg"},
+                    {id:10002,imgUrl:"http://imgs.qunarzz.com/vc/e3/a1/71/f498dfd3bed948d623c9093252.jpg_92.jpg"}
                 ],
             }
         },
