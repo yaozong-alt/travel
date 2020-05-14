@@ -7,10 +7,12 @@
              <span class="iconfont">&#xe62d;</span>
             输入景点/游玩主题/城市
         </div>
-        <div class="header-right">
-          {{this.city}}
-            <span class="iconfont">&#xe62a;</span>
-        </div>
+        <router-link to="/city">
+            <div class="header-right">
+            {{this.city}}
+                <span class="iconfont">&#xe62a;</span>
+            </div>
+        </router-link>
     </div>
 </template>
 
@@ -24,12 +26,9 @@
 </script>
 
 <style lang="stylus" scoped>
-    //1 rem = 50px;
-    //43 px = .86px;
-    $bgColor = #00b4d4
     .header
         display flex
-        line-height .86rem
+        line-height $HeaderHeight
         background $bgColor
         color:#fff
         .header-left
@@ -51,6 +50,7 @@
         .header-right
             width 1.26rem
             float right
+            color #ffffff
             text-align center 
             .iconfont
                 font-size .25rem

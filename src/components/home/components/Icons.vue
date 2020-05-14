@@ -48,11 +48,6 @@
 </script>
 
 <style lang="stylus" scoped>
-    $textColor =  #333
-    ellipsis ()
-        overflow hidden
-        white-space nowrap
-        text-overflow ellipsis
     .warp >>> .swiper-container
         height 0
         padding-bottom 50%
