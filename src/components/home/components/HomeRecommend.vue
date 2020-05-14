@@ -2,7 +2,7 @@
   <div>
     <div class="title"><h3>热销推荐</h3></div>
       <ul>
-        <li class="item" v-for="item in recommendList" :key="item.id">
+        <li class="item" v-for="item of list" :key="item.id">
             <div class="item-img-wrapper">
             <img class="item-img" :src="item.imgUrl" alt=""> 
             </div>
@@ -20,26 +20,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data(){
-    return {
-      recommendList: [
-        {
-          id:1001,imgUrl:"//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_256x160_f977b5d4.jpg",title:"故宫",desc:"世界五大宫之首"
-        },
-         {
-          id:1002,imgUrl:"//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_256x160_f977b5d4.jpg",title:"故宫",desc:"世界五大宫之首"
-        },
-         {
-          id:1003,imgUrl:"//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_256x160_f977b5d4.jpg",title:"故宫",desc:"世界五大宫之首"
-        },
-         {
-          id:1004,imgUrl:"//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_256x160_f977b5d4.jpg",title:"故宫",desc:"世界五大宫之首"
-        },
-         {
-          id:1005,imgUrl:"//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_256x160_f977b5d4.jpg",title:"故宫",desc:"世界五大宫之首"
-        }
-      ]
-    }
+  props:{
+    list : Array
   }
 }
 </script>
