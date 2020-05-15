@@ -45,7 +45,7 @@
             },
             haddleLetterChange (letter) {
                this.letter = letter;
-               //console.log('City中的letter:',letter);
+               console.log('City中的letter:',letter);
             }
         },
         mounted () {

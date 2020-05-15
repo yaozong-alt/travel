@@ -52,7 +52,9 @@
             }
         },
         mounted () {
-            setTimeout(() => {this.scroll = new BScroll(this.$refs.wrapper)},300)
+            setTimeout(() => {
+                this.scroll = new BScroll(this.$refs.wrapper,{click:true})
+                },300)
             //使用setTimeout函数初始化,解决初始化不能滚动的bug;
         }
     }
