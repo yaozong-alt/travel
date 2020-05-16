@@ -1,7 +1,7 @@
 <template>
     <div>
         <CityHeader/>
-        <CitySearch/>
+        <CitySearch :cities="cities"/>
         <CityList :cities="cities" :hot="hotCities" :letter="letter"/>
         <CityAlphabet :cities="cities" @change="haddleLetterChange"/>
     </div>
@@ -9,10 +9,10 @@
 
 <script>
     import axios from 'axios'
-    import CityHeader from '@/views/city/components/CityHeader'
-    import CitySearch from '@/views/city/components/CitySearch'
-    import CityList from '@/views/city/components/CityList'
-    import CityAlphabet from '@/views/city/components/CityAlphabet'
+    import CityHeader from '@/components/city/CityHeader';
+    import CityList from '@/components/city/CityList'
+    import CitySearch from '@/components/city/CitySearch'
+    import CityAlphabet from '@/components/city/CityAlphabet'
     export default {
         name:"City",
         components:{

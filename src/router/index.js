@@ -6,12 +6,12 @@ Vue.use(VueRouter)
     {
         path: '/',
         name: 'Home',
-        component:() => import ('@/components/home/Home') 
+        component:() => import ('@/views/Home') 
       },
   {
     path: '/city',
     name: 'City',
-    component: () => import ('../views/city/City.vue')
+    component: () => import ('@/views/City')
   }
 ]
 

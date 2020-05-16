@@ -43,7 +43,7 @@
         },
         methods:{
             haddleLetterClick (e) {
-                this.$emit('change',e.target.innerText)
+               setTimeout(() => { this.$emit('change',e.target.innerText)},100)
             },
             haddleTouchStart () {
                 this.touchStatus = true;
