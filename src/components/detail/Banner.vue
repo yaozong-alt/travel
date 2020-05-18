@@ -12,15 +12,18 @@
                 </p>
             </div>
         </div>
-        <Gallary 
-        :imgs=" gallaryImgs" 
-        v-show="show"
-        @close="haddleGallaryClick"
-        />
+        <FadeAnimation>
+            <Gallary 
+            :imgs=" gallaryImgs" 
+            v-show="show"
+            @close="haddleGallaryClick"
+            />
+        </FadeAnimation>
     </div>
 </template>
 
 <script>
+import FadeAnimation from '@/common/fade/FadeAnimation'
 import Gallary from '@/common/gallary/Gallary'
     export default {
         name:"Banner",
@@ -36,6 +39,7 @@ import Gallary from '@/common/gallary/Gallary'
         },
         components:{
             Gallary,
+            FadeAnimation,
         },
         methods:{
             showGallary () {
